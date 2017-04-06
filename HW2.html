@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+<input type="number" id="firstnumber">
+<br>
+<input type="number" id="lastnumber">
+<br>
+<input type="reset">
+</form> 
+
+<button onclick="add()">+</button>
+<button onclick="div()">-</button>
+<button onclick="ee()">*</button>
+<button onclick="QQ()">/</button>
+<br>
+
+
+<script>
+	function add() {
+    var x = document.getElementById("firstnumber").value;
+    var y = document.getElementById("lastnumber").value;
+    var str = parseInt(x) + parseInt(y);
+	document.getElementById("demo").innerHTML =str;
+	
+    }
+    function div() {
+    var x = document.getElementById("firstnumber").value;
+    var y = document.getElementById("lastnumber").value;
+    var str = parseInt(x) - parseInt(y);
+    document.getElementById("demo").innerHTML =str;
+    }
+    function ee() {
+    var x = document.getElementById("firstnumber").value;
+    var y = document.getElementById("lastnumber").value;
+    var str = parseInt(x) * parseInt(y);
+ document.getElementById("demo").innerHTML =str;
+    }
+    function QQ() {
+    var x = document.getElementById("firstnumber").value;
+    var y = document.getElementById("lastnumber").value;
+    var str = parseInt(x) / parseInt(y);
+    document.getElementById("demo").innerHTML =str;
+    }
+</script>
+<output id="demo"></output>
+
+</body>
+</html>
